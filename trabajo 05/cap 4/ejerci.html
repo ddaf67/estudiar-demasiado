@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function generarCaracteres(caracter, Ncantidad) {
+        var caracteres = "";
+        var i = 0;
+while (i < Ncantidad) {
+    caracteres += caracter;
+    i++;
+}
+
+return caracteres;
+    }
+    alert("Bienvenido");
+    var cantidadCaracteres = prompt("Ingresa la cantidad de caracteres");
+    var Ncantidad = parseInt(cantidadCaracteres);
+
+    var Repetircaracter = prompt("Ingresa el carácter que deseas repetir");
+    var resultado = generarCaracteres(Repetircaracter, Ncantidad);
+
+    document.write(resultado);
+   
+        
+    </script>
+</body>
+</html>

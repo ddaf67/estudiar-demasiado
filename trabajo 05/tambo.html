@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambo</title>
+</head>
+<body>
+    <script>
+        var cambio = 3.00;
+        
+        cambio[0]=prompt(" ingrese el monto a cambiar: ");
+        var aux = 0;
+
+        var siono;
+
+        do {
+            siono =prompt("Deseas seguir cambiando (s/n)");
+        } 
+        while (siono != "s" && siono != "n")
+        
+
+        while (siono == "s") {
+            compras[ aux+1 ]=prompt(" : ");       
+            siono = prompt("Deseas seguir cambiando (s/n)?: ");
+            aux = aux +1;
+        }
+
+        document.write("<p>Arreglo: " + compras+"</p>");
+        document.write("<p>El ultimo cajón es: " + compras[compras.length-1]+"</p>")  ;      
+    </script>
+</body>
+</html>
